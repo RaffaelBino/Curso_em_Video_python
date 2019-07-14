@@ -1,6 +1,8 @@
 import math, random
 
 # Exercicio 16
+from builtins import print
+
 print('=' * 20, 'Primeiro exercicio', '=' * 20)
 n = float(input('Digite um numero: '))
 # print('O numero digitado foi {} e a porção inteira dele é {}.'.format(n, math.floor(n)))   # Arredonda pra baixo
@@ -21,3 +23,13 @@ n = float(input('Digite o ângulo que você deseja: '))
 print('O ângulo de {} tem o SENO de {:.2f}'.format(n, math.sin(math.radians(n))))
 print('O ângulo de {} tem o COSSENO de {:.2f}'.format(n, math.cos(math.radians(n))))
 print('O ângulo de {} tem o TAGENTE de {:.2f}'.format(n, math.tan(math.radians(n))))
+
+# Exercicio 19
+print('=' * 20, 'Quarto exercicio', '=' * 20)
+a1 = input('Digite o nome do primeiro aluno: ')
+a2 = input('Digite o nome do segundo aluno: ')
+a3 = input('Digite o nome do terceiro aluno: ')
+a4 = input('Digite o nome do quarto aluno: ')
+lista = [a1, a2, a3, a4]
+escohido = random.choice(lista)
+print('O aluno(a) escolhido foi : {}'.format(escohido))

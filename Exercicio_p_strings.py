@@ -31,3 +31,18 @@ print(cid[:5].upper() == 'SANTO')
 print('='*20, 'Quarto exercicio','='*20)
 nome = str(input('Qual seu nome completo? ')).strip()
 print('Seu nomoe tem Silva ? {}'.format('SILVA' in nome.upper()))
+
+# Exercicio 26
+print('='*20, 'Quinto exercicio','='*20)
+frase = str(input('Digite uma frase: ')).upper().strip()
+print('A letra A apareceu {} vezes na frase'.format(frase.count('A')))
+print('A primeira letra A apareceu na posição {}'.format(frase.find('A')+1))
+print('A ultima letra A apareceu na posição {}'.format(frase.rfind('A')+1))
+
+# Exercicio 27
+print('='*20, 'Sexto exercicio','='*20)
+nome = str(input('Digite seu nome completo')).strip()
+n = nome.split()
+print('Seu primeiro nome é: {}'.format(n[0]))
+print('Seu ultimo nome é: {}'.format(n[len(n)-1]))
+

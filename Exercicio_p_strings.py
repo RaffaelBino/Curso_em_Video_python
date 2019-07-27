@@ -24,4 +24,10 @@ print('Milhar: {}'.format(m))
 
 # Exercicio 24
 print('='*20, 'Terceiro exercicio','='*20)
+cid = str(input('Em que cidade você nasceu? :')).strip()
+print(cid[:5].upper() == 'SANTO')
 
+# Exercicio 25
+print('='*20, 'Quarto exercicio','='*20)
+nome = str(input('Qual seu nome completo? ')).strip()
+print('Seu nomoe tem Silva ? {}'.format('SILVA' in nome.upper()))

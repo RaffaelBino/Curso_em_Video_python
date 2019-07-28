@@ -56,3 +56,47 @@ if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
     print('O ano {} é Bissexto'.format(ano))
 else:
     print('O ano {} não é bissexto'.format(ano))
+
+# Exercicio 33
+print('='*20, 'Sexto exercicio','='*20)
+n1 = float(input('Digite o primeiro valor: '))
+n2 = float(input('Digite o segundo valor: '))
+n3 = float(input('Digite o terceiro valor: '))
+if n1 > n2 and n1 > n3:
+    print('O maior valor é o {} '.format(n1))
+if n2 > n1 and n2 > n3:
+    print('O maior valor é o {} '.format(n2))
+if n3 > n1 and n3 > n2:
+    print('O maior valor é o {} '.format(n3))
+if n1 < n3 and n1 < n2:
+    print('O menor valor {}'.format(n1))
+if n2 < n3 and n2 < n1:
+    print('O menor valor {}'.format(n2))
+if n3 < n1 and n3 < n2:
+    print('O menor valor {}'.format(n3))
+
+# Exercicio 34
+print('='*20, 'Sétimo exercicio','='*20)
+sal = float(input('Qual o seu salário atual ? R$'))
+if sal > 1250:
+    sal = sal + (sal * (10/100))
+    print('Seu salário passou a ser R${:.2f}'.format(sal))
+else:
+    sal = sal + (sal * (15/100))
+    print('Seu salário passou a ser R${:.2f}'.format(sal))
+
+# Exercicio 35
+print('='*20, 'Oitavo exercicio','='*20)
+print('-=-' * 25)
+sleep(.5)
+print('ANÁLISADOR DE TRIANGULOS')
+sleep(.5)
+print('-=-' * 25)
+s1 = float(input('Digite o primeiro segmento: '))
+s2 = float(input('Digite o segundo segmento: '))
+s3 = float(input('Digite o terceiro segmento: '))
+
+if s1 < s2 + s3 and s2 < s1 + s3 and s3 < s1 + s2:
+    print('Os seguimentos acima pode formar Triangulo')
+else:
+    print('Os seguimentos acima não podem formar Triangulo')

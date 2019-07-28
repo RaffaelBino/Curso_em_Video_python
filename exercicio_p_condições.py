@@ -1,5 +1,6 @@
 from random import randint as rdi
 from time import sleep
+from datetime import date
 # Exercicio 28
 print('='*20, 'Primeiro exercicio','='*20)
 pc = rdi(0, 5)  # faz o computador sortear unm número
@@ -36,5 +37,22 @@ if n % 2 == 0:
 else:
     print('O número {} é Ímpar'.format(n))
 
-# Exercicio 30
-print('='*20, 'Terceiro exercicio','='*20)
+# Exercicio 31
+print('='*20, 'Quarto exercicio','='*20)
+dist = float(input('Quantos Km é sua viagem ? '))
+print('Você está prestes a começar a sua viagem de {}Km.'.format(dist))
+if dist <= 200:
+    valp = dist * 0.50
+else:
+    valp = dist * 0.45
+print('E o preço da sua passagem será: R${:.2f}'.format(valp))
+
+# Exercicio 32
+print('='*20, 'Quinto exercicio','='*20)
+ano = int(input('Qual ano você quer analisar? Coloque 0 para analisar o ano atual. -> '))
+if ano == 0:
+    ano = date.today().year
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+    print('O ano {} é Bissexto'.format(ano))
+else:
+    print('O ano {} não é bissexto'.format(ano))

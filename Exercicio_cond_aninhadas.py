@@ -25,6 +25,8 @@ if escolha == 1:
 elif escolha == 2:
     converte = oct(num)[2:]
     print('Seu número convertido para Octal é: {}'.format(converte))
-else:
+elif escolha == 3:
     converte = hex(num)[2:]
     print('Seu número convertido para Hexadecimal é: {}'.format(converte))
+else:
+    print('Opção Inválida! Tente Novamente.')

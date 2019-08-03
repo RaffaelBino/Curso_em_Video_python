@@ -1,3 +1,4 @@
+from datetime import date
 # Exercicio 36
 print('='*20, 'Primeiro exercicio','='*20)
 vlc = float(input('Valor da casa: R$ '))
@@ -30,3 +31,27 @@ elif escolha == 3:
     print('Seu número convertido para Hexadecimal é: {}'.format(converte))
 else:
     print('Opção Inválida! Tente Novamente.')
+
+# Exercicio 38
+print('='*20, 'Terceiro exercicio','='*20)
+print('Digite dois números')
+n1 = int(input('Digite o primeiro valor: '))
+n2 = int(input('Digite o segundo valor: '))
+if n1 > n2:
+    print('O primeiro Valor é maior')
+elif n2 > n1:
+    print('O segundo valor é maior')
+else:
+    print('Os valores são iguais')
+
+# Exercicio 39
+print('='*20, 'Quarto exercicio','='*20)
+anoatual = date.today().year
+nasc = int(input('Em que ano você nasceu ? '))
+idade = anoatual - nasc
+print('Quem nasceu em {}, tem {} no ano de {}.'.format(nasc, idade, anoatual))
+if idade == 18:
+    print('Você deve se alistar IMEDIATAMENTE!!')
+elif idade < 18:
+    print('Você ainda não completou 18 anos, faltam {} pro seu alistamento'.format())
+

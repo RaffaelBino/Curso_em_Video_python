@@ -1,5 +1,7 @@
 from datetime import date
 # Exercicio 36
+from exercicio_p_condições import ano
+
 print('='*20, 'Primeiro exercicio','='*20)
 vlc = float(input('Valor da casa: R$ '))
 slc = float(input('Salário do comprador: R$ '))
@@ -49,11 +51,17 @@ print('='*20, 'Quarto exercicio','='*20)
 anoatual = date.today().year
 nasc = int(input('Em que ano você nasceu ? '))
 idade = anoatual - nasc
-print('Quem nasceu em {}, tem {} no ano de {}.'.format(nasc, idade, anoatual))
+print('Quem nasceu em {}, tem {} anos no ano de {}.'.format(nasc, idade, anoatual))
 if idade == 18:
     print('Você deve se alistar IMEDIATAMENTE!!')
 elif idade < 18:
-    print('Faltam {} pro seu alistamento'.format(idade-))
+    saldo = 18 - idade
+    print('Faltam {} pro seu alistamento'.format(saldo))
+    ano = anoatual + saldo
+    print('Seu alistamento será em {}'.format(ano))
 else:
-    print('Você ja deveria ter se alistado a {} anos'.format())
+    saldo = idade - 18
+    print('Você ja deveria ter se alistado a {} anos'.format(saldo))
+    ano = anoatual - saldo
+    print('Seu a listamento foi em {}'.format(ano))
 

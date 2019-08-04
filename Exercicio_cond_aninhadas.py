@@ -54,7 +54,7 @@ if idade == 18:
     print('Você deve se alistar IMEDIATAMENTE!!')
 elif idade < 18:
     saldo = 18 - idade
-    print('Faltam {} pro seu alistamento'.format(saldo))
+    print('Faltam {} anos pro seu alistamento'.format(saldo))
     ano = anoatual + saldo
     print('Seu alistamento será em {}'.format(ano))
 else:

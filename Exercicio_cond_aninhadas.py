@@ -1,7 +1,5 @@
 from datetime import date
 # Exercicio 36
-from exercicio_p_condições import ano
-
 print('='*20, 'Primeiro exercicio','='*20)
 vlc = float(input('Valor da casa: R$ '))
 slc = float(input('Salário do comprador: R$ '))

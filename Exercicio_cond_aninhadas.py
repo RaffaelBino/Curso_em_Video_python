@@ -77,3 +77,20 @@ elif m >= 7:
 else:
     print('Sua média foi {:.1f}.'.format(m))
     print('Você está de RECUPERAÇÃO')
+
+# Exercicio 41
+print('='*20, 'Sexto exercicio','='*20)
+anonasc = int(input('Ano de nascimento: '))
+anoatual = date.today().year
+idades = anoatual - anonasc
+print('O atléta tem {} anos.'.format(idades))
+if idades <= 9:
+    print('Classificação MIRIM')
+elif idades <= 14:
+    print('Classificação INFANTIL')
+elif idades <= 19:
+    print('Classificação JÚNIOR')
+elif idades <= 25:
+    print('Classificação SÊNIOR')
+else:
+    print('Classificação MASTER')

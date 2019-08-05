@@ -111,3 +111,19 @@ if l1 < l2 + l3 and l2 < l1 + l3 and l3 < l1 + l2:
 else:
     print('Os seguimentos acima NÃO PODEM formar um trinangulo')
 
+# Exercicio 43
+print('='*20, 'Oitavo exercicio','='*20)
+peso = float(input('Qual é o seu pese? (Kg) '))
+altura = float(input('Qual é a sua altura? (m) '))
+imc = peso/(altura**2)
+print('Seu imc deu: {:.1f} '.format(imc))
+if imc < 18.5:
+    print('Você está ABAIXO DO PESO!')
+elif 18.5 <= imc < 25:
+    print('Você está com o PESO NORMAL!')
+elif 25 <= imc < 30:
+    print('Você está com SOBREPESO')
+elif 30 <= imc < 40:
+    print('Você está com OBESIDADE')
+else:
+    print('Você está com OBSIDADE MORBIDA, procure um médico/nutricionista')

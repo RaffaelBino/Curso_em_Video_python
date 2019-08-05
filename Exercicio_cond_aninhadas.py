@@ -63,3 +63,17 @@ else:
     ano = anoatual - saldo
     print('Seu a listamento foi em {}'.format(ano))
 
+# Exercicio 40
+print('='*20, 'Quinto exercicio','='*20)
+nt1 = float(input('Digite a primeira nota: '))
+nt2 = float(input('Digite a segunda nota: '))
+m = (nt1 + nt2) / 2
+if m < 5:
+    print('Sua média foi {:.1f}.'.format(m))
+    print('Você foi REPROVADO!')
+elif m >= 7:
+    print('Sua média foi {:.1f}.'.format(m))
+    print('Você está APROVADO!')
+else:
+    print('Sua média foi {:.1f}.'.format(m))
+    print('Você está de RECUPERAÇÃO')

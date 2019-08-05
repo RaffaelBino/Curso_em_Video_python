@@ -127,3 +127,7 @@ elif 30 <= imc < 40:
     print('Você está com OBESIDADE')
 else:
     print('Você está com OBSIDADE MORBIDA, procure um médico/nutricionista')
+
+# Exercicio 44
+print('='*20, 'Nono exercicio','='*20)
+

@@ -94,3 +94,20 @@ elif idades <= 25:
     print('Classificação SÊNIOR')
 else:
     print('Classificação MASTER')
+
+# Exercicio 42
+print('='*20, 'Sétimo exercicio','='*20)
+l1 = int(input('Digite o primeiro segmento: '))
+l2 = int(input('Digite o segundo segmento: '))
+l3 = int(input('Digite o terceiro segmento: '))
+if l1 < l2 + l3 and l2 < l1 + l3 and l3 < l1 + l2:
+    print('Os seguimentos acima PODEM formar um triangulo', end=' ')
+    if l1 == l2 == l3:
+        print('e será um trinângulo EQUILÁTERO')
+    elif l1 != l2 != l3 != l1:
+        print('e será um trinângulo ESCALENO')
+    else:
+        print('e será um trinângulo ISÓSCELES')
+else:
+    print('Os seguimentos acima NÃO PODEM formar um trinangulo')
+

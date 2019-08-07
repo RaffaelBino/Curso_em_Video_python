@@ -165,29 +165,29 @@ print(''' Opções:
 [1] Papel
 [2] Tesoura''')
 jogador = int(input('Qual a sua jogada ? '))
-print('~'*30)
-print('Computador jogou {}.'.format(itens[pc]))
-print('Jogador jogou {}.'.format(itens[jogador]))
-print('~'*30)
 print('Pedra')
 sleep(1)
 print('Papel')
 sleep(1)
 print('Tesoura')
 sleep(1)
+print('~'*30)
+print('Computador jogou {}.'.format(itens[pc]))
+print('Jogador jogou {}.'.format(itens[jogador]))
+print('~'*30)
 if jogador == pc:
     print('Empatou')
+elif jogador == 0 and pc == 1:
+    print('Computador ganhou!')
+elif jogador == 1 and pc == 0:
+    print('Jogador ganhou!')
+elif jogador == 2 and pc == 0:
+    print('Computador ganhou!')
+elif jogador == 0 and pc == 2:
+    print('Jogador ganhou!')
 elif jogador == 1 and pc == 2:
     print('Computador ganhou!')
 elif jogador == 2 and pc == 1:
-    print('Jogador ganhou!')
-elif jogador == 3 and pc == 1:
-    print('Computador ganhou!')
-elif jogador == 1 and pc == 3:
-    print('Jogador ganhou!')
-elif jogador == 2 and pc == 3:
-    print('Computador ganhou!')
-elif jogador == 3 and pc == 2:
     print('Jogador ganhou!')
 else:
     print('Digite um número válido!!!')

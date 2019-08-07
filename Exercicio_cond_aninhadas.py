@@ -1,4 +1,7 @@
 from datetime import date
+from random import randint
+from time import sleep
+
 # Exercicio 36
 print('='*20, 'Primeiro exercicio','='*20)
 vlc = float(input('Valor da casa: R$ '))
@@ -152,3 +155,40 @@ elif opcao == 4:
     print('O Valor das suas parcelas serão: R${:.2f}'.format(total))
 else:
     print('Digite uma Opção válida!')
+
+# Exercicio 45
+print('='*20, 'Decimo exercicio','='*20)
+itens = ('Pedra', 'Papel', 'Tesoura')
+pc = randint(0, 2)
+print(''' Opções:
+[0] Pedra
+[1] Papel
+[2] Tesoura''')
+jogador = int(input('Qual a sua jogada ? '))
+print('~'*30)
+print('Computador jogou {}.'.format(itens[pc]))
+print('Jogador jogou {}.'.format(itens[jogador]))
+print('~'*30)
+print('Pedra')
+sleep(1)
+print('Papel')
+sleep(1)
+print('Tesoura')
+sleep(1)
+if jogador == pc:
+    print('Empatou')
+elif jogador == 1 and pc == 2:
+    print('Computador ganhou!')
+elif jogador == 2 and pc == 1:
+    print('Jogador ganhou!')
+elif jogador == 3 and pc == 1:
+    print('Computador ganhou!')
+elif jogador == 1 and pc == 3:
+    print('Jogador ganhou!')
+elif jogador == 2 and pc == 3:
+    print('Computador ganhou!')
+elif jogador == 3 and pc == 2:
+    print('Jogador ganhou!')
+else:
+    print('Digite um número válido!!!')
+

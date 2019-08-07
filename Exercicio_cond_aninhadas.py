@@ -130,4 +130,24 @@ else:
 
 # Exercicio 44
 print('='*20, 'Nono exercicio','='*20)
-
+print('{:+^40}'.format(' Loja '))
+preco = float(input('Preço das compras: R$'))
+print(''' Formas de Pagamento
+[ 1 ] À vista / Débito (10% de desconto)
+[ 2 ] À vista (Cartão de crédito)/(5% de desconto)
+[ 3 ] 2x no Cartão 
+[ 4 ] 3x ou mais no cartão ( 20% de juros )''')
+opcao = int(input('Escolha sua forma de pagamento: '))
+if opcao == 1:
+    print('O valor da(s) sua(s) compra(s) era {:.2f} e  ficou em: R${:.2f}'.format(preco, preco - (preco * (10/100))))
+elif opcao == 2:
+    print('O valor da(s) sua(s) compra(s) era {:.2f} e  ficou em: R${:.2f}'.format(preco, preco - (preco * (5 / 100))))
+elif opcao == 3:
+    print('O valor da(s) sua(s) compra(s) era {:.2f} e  ficou em: R${:.2f}'.format(preco,preco))
+elif opcao == 4:
+    totparc = int(input('Quantas parcelas ?'))
+    total = preco / totparc
+    print('O valor da(s) sua(s) compra(s) era de R${:.2f}, após ser parcelada em: {}x, ficou em: R${:.2f}'.format(preco, totparc,(preco + total)))
+    print('O Valor das suas parcelas serão: R${}'.format(total))
+else:
+    print('Digite uma Opção válida!')

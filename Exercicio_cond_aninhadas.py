@@ -146,8 +146,9 @@ elif opcao == 3:
     print('O valor da(s) sua(s) compra(s) era {:.2f} e  ficou em: R${:.2f}'.format(preco,preco))
 elif opcao == 4:
     totparc = int(input('Quantas parcelas ?'))
-    total = preco / totparc
-    print('O valor da(s) sua(s) compra(s) era de R${:.2f}, após ser parcelada em: {}x, ficou em: R${:.2f}'.format(preco, totparc,(preco + total)))
+    juros = preco + (preco * 20/100)
+    total = juros / totparc
+    print('O valor da(s) sua(s) compra(s) era de R${:.2f}, após ser parcelada em: {}x, ficou em: R${:.2f}'.format(preco, totparc,juros))
     print('O Valor das suas parcelas serão: R${:.2f}'.format(total))
 else:
     print('Digite uma Opção válida!')

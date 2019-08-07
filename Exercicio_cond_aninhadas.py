@@ -148,6 +148,6 @@ elif opcao == 4:
     totparc = int(input('Quantas parcelas ?'))
     total = preco / totparc
     print('O valor da(s) sua(s) compra(s) era de R${:.2f}, após ser parcelada em: {}x, ficou em: R${:.2f}'.format(preco, totparc,(preco + total)))
-    print('O Valor das suas parcelas serão: R${}'.format(total))
+    print('O Valor das suas parcelas serão: R${:.2f}'.format(total))
 else:
     print('Digite uma Opção válida!')

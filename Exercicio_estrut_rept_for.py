@@ -13,3 +13,19 @@ for i in range(0, 51, 2):
     #    if i % 2 == 0:
     print(i, end=' ')
 print('Acabou')
+
+# Exercicio 48
+print('=' * 20, 'Terceiro exercicio', '=' * 20)
+soma = 0
+cont = 0
+for i in range(1, 501):
+    if i % 3 == 0:
+        cont += 1
+        soma += i
+print('A soma dos {} valores solicitados é {}.'.format(cont, soma))
+
+# Exercicio 49
+print('=' * 20, 'Quarto exercicio', '=' * 20)
+n = int(input('Digite um numero de 1 a 9 para saber sua tábuada: '))
+for i in range(1, 11):
+    print('{} x {:2} = {}'.format(n, i, n*i))

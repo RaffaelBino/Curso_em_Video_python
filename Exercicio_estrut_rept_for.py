@@ -29,3 +29,13 @@ print('=' * 20, 'Quarto exercicio', '=' * 20)
 n = int(input('Digite um numero de 1 a 9 para saber sua tábuada: '))
 for i in range(1, 11):
     print('{} x {:2} = {}'.format(n, i, n*i))
+
+# Exercicio 50
+som = 0
+print('=' * 20, 'Quinto exercicio', '=' * 20)
+for i in range(1, 7):
+    num = int(input('Digite o {} valor: '.format(i)))
+    if num % 2 == 0:
+        som += num
+print('A soma de todos os valores pares é: {}.'.format(som))
+

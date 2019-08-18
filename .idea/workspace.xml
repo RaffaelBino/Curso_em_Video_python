@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b24997bb-a476-4b13-a90a-e8e309c55053" name="Default Changelist" comment="ajuste">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercicio_estrut_rept_for.py" beforeDir="false" afterPath="$PROJECT_DIR$/Exercicio_estrut_rept_for.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,28 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Exercicio_cond_aninhadas">
-    <configuration name="Aula_10" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Curso_em_Video_python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Aula_10.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Exercicio_estrut_rept_for">
     <configuration name="Aula_11" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Curso_em_Video_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,6 +89,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Aula_13" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Curso_em_Video_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Aula_13.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Exercicio_cond_aninhadas" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Curso_em_Video_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,7 +131,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="exercicio_p_condições" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Exercicio_estrut_rept_for" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Curso_em_Video_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,7 +143,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercicio_p_condições.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Exercicio_estrut_rept_for.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Exercicio_estrut_rept_for" />
+        <item itemvalue="Python.Aula_13" />
         <item itemvalue="Python.Exercicio_cond_aninhadas" />
         <item itemvalue="Python.Aula_12" />
         <item itemvalue="Python.Aula_11" />
-        <item itemvalue="Python.exercicio_p_condições" />
-        <item itemvalue="Python.Aula_10" />
       </list>
     </recent_temporary>
   </component>

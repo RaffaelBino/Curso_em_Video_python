@@ -48,3 +48,18 @@ for i in range(x, decimo + y, y):
     print('{}'.format(i), end='-> ')
 print('Acabou')
 
+# Exercicio 52
+print('=' * 20, 'Setimo exercicio', '=' * 20)
+nump = int(input('Digite um número: '))
+tot = 0
+for i in range(1, nump + 1):
+    if nump % i == 0:
+        print('\033[34m', end='')
+    else:
+        print('\031[m33', end='')
+    print('{}'.format(i), end='')
+print('\n\033[m0O número {} foi divisível {} vezes'.format(nump, tot))
+if tot == 2:
+    print('E por isso ele é Primo!')
+else:
+    print('E por isso ele não é PSrimo!')

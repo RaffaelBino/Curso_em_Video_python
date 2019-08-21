@@ -41,4 +41,10 @@ print('A soma de todos os valores pares é: {}.'.format(som))
 
 # Exercicio 51
 print('=' * 20, 'Sexto exercicio', '=' * 20)
+x = int(input('Primeiro termo:  '))
+y = int(input('Razao: '))
+decimo = x + (10 - 1) * y
+for i in range(x, decimo + y, y):
+    print('{}'.format(i), end='-> ')
+print('Acabou')
 

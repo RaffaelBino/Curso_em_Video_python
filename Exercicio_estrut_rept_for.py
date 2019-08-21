@@ -31,11 +31,14 @@ for i in range(1, 11):
     print('{} x {:2} = {}'.format(n, i, n*i))
 
 # Exercicio 50
-som = 0
 print('=' * 20, 'Quinto exercicio', '=' * 20)
+som = 0
 for i in range(1, 7):
     num = int(input('Digite o {} valor: '.format(i)))
     if num % 2 == 0:
         som += num
 print('A soma de todos os valores pares é: {}.'.format(som))
+
+# Exercicio 51
+print('=' * 20, 'Sexto exercicio', '=' * 20)
 

@@ -54,12 +54,13 @@ nump = int(input('Digite um número: '))
 tot = 0
 for i in range(1, nump + 1):
     if nump % i == 0:
-        print('\033[34m', end='')
+        print('\033[33m', end='')
+        tot += 1
     else:
-        print('\031[m33', end='')
-    print('{}'.format(i), end='')
-print('\n\033[m0O número {} foi divisível {} vezes'.format(nump, tot))
+        print('\033[31m', end='')
+    print('{}'.format(i), end=' ')
+print('\n\033[0mO número {} foi divisível {} vezes'.format(nump, tot))
 if tot == 2:
     print('E por isso ele é Primo!')
 else:
-    print('E por isso ele não é PSrimo!')
+    print('E por isso ele não é Primo!')

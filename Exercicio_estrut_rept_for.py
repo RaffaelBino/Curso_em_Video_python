@@ -1,3 +1,4 @@
+from datetime import date
 from time import sleep
 # Exercicio 46
 print('=' * 20, 'Primeiro exercicio', '=' * 20)
@@ -79,3 +80,18 @@ if inverso == junto:
     print('Temos um pálindromo!')
 else:
     print('A frase digitada não é um palíndromo!')
+
+# Exercicio 54
+print('=' * 20, 'Nono exercicio', '=' * 20)
+atual = date.today().year
+velho = 0
+novo = 0
+for i in range(1, 8):
+    ano = int(input('Em que ano a {}º pessoa nasceu ? '.format(i)))
+    idade = atual - ano
+    if idade >= 21:
+        velho += 1
+    else:
+        novo += 1
+print('Existem {} pessoas maior de 21 anos de idade.'.format(velho))
+print('Exitem {} pessoas menor de 21 anos de idade.'.format(novo))

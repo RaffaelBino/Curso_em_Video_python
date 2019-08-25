@@ -95,3 +95,20 @@ for i in range(1, 8):
         novo += 1
 print('Existem {} pessoas maior de 21 anos de idade.'.format(velho))
 print('Exitem {} pessoas menor de 21 anos de idade.'.format(novo))
+
+# Exercicio 55
+print('=' * 20, 'Décimo exercicio', '=' * 20)
+maior = 0
+menor = 0
+for i in range(1, 6):
+    peso = float(input('Qual o peso da {}° pessoa ? '.format(i)))
+    if i == 1:
+        maior = peso
+        menor = peso
+    else:
+        if peso > maior:
+            maior = peso
+        elif peso < menor:
+            menor = peso
+print('O maior peso foi de {}Kg.'.format(maior))
+print('O menor peso foi de {}Kg.'.format(menor))

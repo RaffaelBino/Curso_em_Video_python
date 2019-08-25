@@ -1,4 +1,3 @@
-from _operator import le
 from time import sleep
 # Exercicio 46
 print('=' * 20, 'Primeiro exercicio', '=' * 20)
@@ -73,7 +72,7 @@ palavras = frase.split()
 junto = ''.join(palavras)
 inverso = ''
 # inverso  = junto[::-1]
-for letra in range(len(junto - 1, -1, -1)):
+for letra in range(len(junto) - 1, -1, -1):
     inverso += junto[letra]
 print('O inverso de {} é {}'.format(junto, inverso))
 if inverso == junto:

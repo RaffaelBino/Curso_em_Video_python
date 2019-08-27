@@ -1,9 +1,9 @@
 
 
 # Exercicio 56
+print('=' * 20, 'Décimo primeiro exercicio', '=' * 20)
 somaidade = 0
 qtdnova = 0
-print('=' * 20, 'Décimo primeiro exercicio', '=' * 20)
 for i in range(1, 5):
     print('{}° pessoa'.format(i))
     nome = str(input('Nome: '))

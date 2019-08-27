@@ -12,8 +12,13 @@ print('Olá sou seu computador...')
 pc = randint(1, 10)
 print('Acabei de advinhar um número de 0 a 10')
 print('Será que você consegue advinhar? ')
+tentativa = 1
 n = int(input('Qual o seu palpite? '))
 while n != pc:
-    print('Você errou!')
+    if n < pc:
+        print('Mais...', end=' ')
+    elif n > pc:
+        print('Menos...', end=' ')
     n = int(input('Tente novamente: '))
-print('Parabéns, eu pensei no número {} e você acertou !!'.format(pc))
+    tentativa += 1
+print('Parabéns, eu pensei no número {} e você acertou em {} tentativas !!'.format(pc, tentativa))

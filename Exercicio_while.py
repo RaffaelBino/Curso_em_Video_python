@@ -119,3 +119,14 @@ while cont <= ns:
     t2 = t3
     cont += 1
 print(' -> FIM!')
+
+# Exercicio 64
+print('=' * 20, 'Oitavo exercicio', '=' * 20)
+n = cont = total = 0
+n = int(input('Digite um número: [999 para parar] '))
+while n != 999:
+    cont += 1
+    total += n
+    n = int(input('Digite um número: [999 para parar] '))
+# print('Você digitou {} números e a soma deles é {}.'.format(cont - 1, total - 999))
+print('Você digitou {} números e a soma deles é {}.'.format(cont, total))

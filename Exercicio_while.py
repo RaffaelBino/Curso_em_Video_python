@@ -103,3 +103,19 @@ while mais != 0:
     print('Pausa')
     mais = int(input('Você quer mais quantos termos ? '))
 print('FIM!!')
+print('Foram mostrados {} termos ao final do programa.'.format(total))
+
+# Exercicio 63
+print('=' * 20, 'Sétimo exercicio', '=' * 20)
+ns = int(input('Digite quantos números você deseja ver na sequência de Fibonacci: '))
+t1 = 0
+t2 = 1
+print('{} -> {}'.format(t1, t2), end='')
+cont = 3
+while cont <= ns:
+    t3 = t1 + t2
+    print(' -> {}'.format(t3), end='')
+    t1 = t2
+    t2 = t3
+    cont += 1
+print(' -> FIM!')

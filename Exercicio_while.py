@@ -1,5 +1,6 @@
 from random import randint
 from time import sleep
+from math import factorial
 # Exercicio 57
 print('=' * 20, 'Primeiro exercicio', '=' * 20)
 sexo = str(input('Digite seu sexo: [M/F] ')).upper().strip()[0]  # O [0] serve para pegar apenas a primeira letra do que for digitado
@@ -57,3 +58,18 @@ while z == 0:
     else:
         print('Digite um número válido')
 print('Programa Finalizado!')
+
+# Exercicio 60
+print('=' * 20, 'Quarto exercicio', '=' * 20)
+n = int(input('Digite um número para ver seu fatorial: '))
+#f = factorial(n)
+#print('O Fatorial de {} é {}.'.format(n, f))
+c = n
+f = 1
+print('Calculando {}!'.format(n))
+while c > 0:
+    print('{} '.format(c), end='')
+    print('x ' if c > 1 else '= ', end='')
+    f *= c
+    c -= 1
+print('{}'.format(f))

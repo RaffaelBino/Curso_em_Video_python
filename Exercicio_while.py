@@ -73,3 +73,15 @@ while c > 0:
     f *= c
     c -= 1
 print('{}'.format(f))
+
+# Exercicio 61
+print('=' * 20, 'Quinto exercicio', '=' * 20)
+pm = int(input('Digite o primeiro termo da sua PA: '))
+raz = int(input('Digite a razão da sua PA: '))
+termo = pm
+k10 = 1
+while k10 <= 10:
+    print('{} -> '.format(termo), end='')
+    termo += raz
+    k10 += 1
+print('Fim')

@@ -130,3 +130,23 @@ while n != 999:
     n = int(input('Digite um número: [999 para parar] '))
 # print('Você digitou {} números e a soma deles é {}.'.format(cont - 1, total - 999))
 print('Você digitou {} números e a soma deles é {}.'.format(cont, total))
+
+# Exercicio 65
+print('=' * 20, 'Nono exercicio', '=' * 20)
+sn = 'S'
+soma = tot = media = maior = menor = 0
+while sn == 'S':
+    n = int(input('Digite um número: '))
+    soma += n
+    tot += 1
+    if tot == 1:
+        maior = menor = n
+    else:
+        if n > maior:
+            maior = n
+        elif n < menor:
+            menor = n
+    sn = str(input('Quer continuar ? [S/N]')).upper().strip()[0]
+media = soma / tot
+print('A você digitou {} e sua média foi {:.2f} '.format(tot, media))
+print('O maior número é o {} e o menor número é {}.'.format(maior, menor))

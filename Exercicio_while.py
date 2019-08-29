@@ -85,3 +85,21 @@ while k10 <= 10:
     termo += raz
     k10 += 1
 print('Fim')
+
+# Exercicio 62
+print('=' * 20, 'Sexto exercicio', '=' * 20)
+pm = int(input('Digite o primeiro termo da sua PA: '))
+raz = int(input('Digite a razão da sua PA: '))
+termo = pm
+k10 = 1
+total = 0
+mais = 10
+while mais != 0:
+    total += mais
+    while k10 <= total:
+        print('{} -> '.format(termo), end='')
+        termo += raz
+        k10 += 1
+    print('Pausa')
+    mais = int(input('Você quer mais quantos termos ? '))
+print('FIM!!')

@@ -51,3 +51,25 @@ while True:
         print(' Você Perdeu!')
         break
 print(f'Game Over!! Você ganhou {ganhos} vez(es)')
+
+# Exercicio 69
+print('=' * 20, 'Quarto exercicio', '=' * 20)
+print('CADESTRE UMA PESSOA')
+maioridade = homens = mulher20 = 0
+while True:
+    idade = int(input('Idade: '))
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Sexo [M/F]')).upper().split()[0]
+    if idade > 18:
+        maioridade += 1
+    if sexo == 'M':
+        homens += 1
+    if idade < 20 and sexo == 'F':
+        mulher20 += 1
+    cont = str(input('Quer continuar? [S/N}')).upper().split()[0]
+    if cont == 'N':
+        break
+print(f'O total de pessoas com mais de 18 anos: {maioridade}')
+print(f'Total de homens cadastrados: {homens}')
+print(f'Total de mulheres com mais de 20 anos: {mulher20}')

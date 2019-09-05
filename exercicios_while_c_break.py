@@ -73,3 +73,25 @@ while True:
 print(f'O total de pessoas com mais de 18 anos: {maioridade}')
 print(f'Total de homens cadastrados: {homens}')
 print(f'Total de mulheres com mais de 20 anos: {mulher20}')
+
+# Exercicio 70
+print('=' * 20, 'Quinto exercicio', '=' * 20)
+precotot = cust1000 = menor = cont = 0
+barato = ''
+print('LOJA')
+while True:
+    nomep = str(input('Produto: '))
+    preco = float(input('Preço: '))
+    precotot += preco
+    cont += 1
+    if preco >= 1000:
+        cust1000 += 1
+    if cont == 1 or preco < menor:
+        menor = preco
+        barato = nomep
+    continu = str(input('Quer continuar? [S/N}')).upper().split()[0]
+    if continu == 'N':
+        break
+print(f'O total da compra foi: {precotot}')
+print(f'Temos {cust1000} produto(s) custando mais de R$1000.00')
+print(f'O produto mais barato é {barato} que custou R${menor:.2f}')
